@@ -1,0 +1,38 @@
+@import'../../../../assets/colors/color';
+@import'../../../../assets/mixins/mixin';
+
+.placecard {
+    width: 15.6rem;
+    height: 16.5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__icon {
+        padding: 0px 0px;
+    }
+
+    &__heading {
+        padding: 0px 0px;
+    }
+
+    &__h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: black;
+    }
+
+    &__p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $light-grey;
+    }
+}
+
+@include mobile {
+    .placecard {
+        width: 22.6rem;
+        height: 9.5rem;
+    }
+}

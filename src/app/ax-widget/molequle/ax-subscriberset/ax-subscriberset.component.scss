@@ -1,0 +1,95 @@
+@import'../../../../assets/colors/color';
+@import'../../../../assets/fonts/font';
+@import'../../../../assets/mixins/mixin';
+
+
+.subscribersect {
+    width: 90%;
+    height: 113px;
+    background-color: $subscriber-col;
+    position: absolute;
+    top: 21.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: $font;
+    left: 77px;
+
+    &__content {
+        display: flex;
+
+        &__data {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+        }
+
+        &__h4 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        &__h3 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__emailaddress {
+        width: 32%;
+        height: 48px;
+        display: flex;
+
+        &__email {
+            width: 90%;
+            border: none;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        background-color: $dark-blue;
+
+        &__img {
+            width: 18.47px;
+            height: 13px;
+        }
+    }
+}
+
+@include tablet {
+    .subscribersect {
+        width: 96%;
+        top: 55.4rem;
+        margin-left: -60px;
+    }
+
+    .subscribersect__content {
+        width: 50%;
+    }
+}
+
+@include mobile {
+    .subscribersect {
+        width: 93%;
+        top: 50rem;
+        height: 190px;
+        flex-direction: column;
+        padding: 10px 0px;
+        left: 77px;
+    }
+
+
+    .subscribersect__content {
+        width: 85%;
+    }
+
+    .subscribersect__emailaddress {
+        width: 86%;
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../../../assets/fonts/font';
+@import'../../../../assets/colors/color';
+
+.english {
+    width: 110px;
+    font-family: $font;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &--image {
+        width: 15px;
+        height: 13.97px;
+    }
+
+    &__div {
+        display: flex;
+        height: 0px;
+    }
+
+    &__p {
+        display: flex;
+        margin-top: -12px;
+    }
+
+
+}

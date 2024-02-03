@@ -1,0 +1,27 @@
+.media-icons {
+    height: 30px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__linkedin {
+        height: 15.22px;
+        width: 13.97px;
+    }
+
+    &__facebook {
+        width: 7px;
+        height: 14px;
+    }
+
+    &__twitter {
+        width: 16.31px;
+        height: 13.26px;
+    }
+
+    &__instagram {
+        width: 14px;
+        height: 14px;
+    }
+}

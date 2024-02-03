@@ -1,0 +1,16 @@
+<div class="view">
+    <h1 class="view__h1">View data</h1>
+    <div *ngIf="datas$ | async as datas">
+        <p>Name: {{ datas.name }}</p>
+        <p>Company: {{ datas.company }}</p>
+        <p>Job Role: {{ datas.name }}</p>
+        <p>Email: {{ datas.email }}</p>
+        <!-- <p>Phone: {{ datas.phone }}</p> -->
+        <p>Country: {{ datas.country }}</p>
+        <p>Message: {{ datas.message }}</p>
+        <p>About Project: {{ datas.project }}</p>
+        <p>About Project: {{ datas.file }}</p>
+
+        <!-- Display other form values as needed -->
+    </div>
+</div>

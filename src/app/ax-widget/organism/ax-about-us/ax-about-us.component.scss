@@ -1,0 +1,143 @@
+@import'../../../../assets/colors/color';
+@import'../../../../assets/fonts/font';
+@import'../../../../assets/mixins/mixin';
+
+.aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 380px;
+    background: linear-gradient(to right, rgba(35, 19, 63, 1), rgba(8, 32, 92, 1), rgba(1, 50, 106, 1));
+    color: $white;
+
+    &__content {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        font-family: $font;
+        height: 18rem;
+
+        &__services {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 30%;
+        }
+
+        &__partners {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 24%;
+        }
+
+        &__data {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    &__ul {
+        list-style-type: none;
+        margin-left: -30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        li {
+            padding: 3px 0px;
+        }
+    }
+
+    &__h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &--lines {
+        background-color: $line-bg;
+        width: 2px;
+        height: 160px;
+    }
+
+}
+
+@include tablet {
+    .aboutus {
+        height: 551px;
+    }
+
+    .aboutus__content {
+        flex-wrap: wrap;
+        gap: 2rem;
+        height: 460px;
+    }
+
+    .aboutus__content__services {
+
+        width: 58%;
+        margin-top: -22px;
+    }
+
+    .aboutus__content__partners {
+        width: 65%;
+    }
+
+    .aboutus--ul {
+        margin-right: 107px;
+    }
+}
+
+@include mobile {
+    .aboutus {
+        height: 560px;
+    }
+
+    .aboutus__content {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .line {
+        display: none;
+
+    }
+
+    .aboutus__content__services {
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .aboutus__content__data {
+        width: 100%;
+    }
+
+    .aboutus__content__partners {
+        width: 49%;
+        margin-top: 0px;
+    }
+
+    .aboutus--ul {
+        margin-right: 116px;
+    }
+
+    .aboutus--line {
+        display: none;
+    }
+
+    .aboutus__ul {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .aboutus__content__partners {
+        width: 60%;
+    }
+
+    .right {
+        margin-left: 58px;
+    }
+
+}

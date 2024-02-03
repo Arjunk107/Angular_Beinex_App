@@ -1,0 +1,87 @@
+<div class="contactus container-fluid">
+    <div class="contactus__left">
+        <div class="contactus__content">
+            <div class="contactus__content__data">
+                <h1 class="contactus__content__h1">Just Don’t Wait! &nbsp; Let’s Connect.</h1>
+                <p class="contactus__content__p">No matter what industry your business is in, we are here to provide you
+                    with incomparable services that fit your needs perfectly. Feel free to connect with us and have a
+                    chat with our team.</p>
+                <p class="contactus__content__p">Happy to be of assistance!</p>
+            </div>
+        </div>
+    </div>
+    <div class="contactus__right">
+        <form [formGroup]="contactForm" (ngSubmit)="submit()" class="contactus__right__contactForm">
+            <div class="contactus__right__horizontalvals">
+                <app-ax-inputs [type]="'text'" [formControlName]="'name'" [id]="'name'" [placeHolder]="'Name'"
+                    [inputClass]="'formInput__input'" [divClass]="'formInput'" [formData]="contactForm"
+                    [iconUrl]="'../../../../assets/images/contactUs/name.png'">
+                </app-ax-inputs>
+
+
+                <app-ax-inputs [type]="'text'" [formControlName]="'company'" [id]="'company'" [placeHolder]="'Company'"
+                    [inputClass]="'formInput__input'" [divClass]="'formInput'" [formData]="contactForm"
+                    [iconUrl]="'../../../../assets/images/contactUs/company.png'">
+                </app-ax-inputs>
+            </div>
+            <div class="contactus__right__horizontalvals">
+                <app-ax-inputs [type]="'text'" [formControlName]="'email'" [id]="'email'" [placeHolder]="'Email Id'"
+                    [inputClass]="'formInput__input'" [divClass]="'formInput'" [formData]="contactForm"
+                    [iconUrl]="'../../../../assets/images/contactUs/email.png'">
+                </app-ax-inputs>
+                <app-ax-inputs [type]="'text'" [formControlName]="'role'" [id]="'role'" [placeHolder]="'Job role'"
+                    [inputClass]="'formInput__input'" [divClass]="'formInput'" [formData]="contactForm"
+                    [iconUrl]="'../../../../assets/images/contactUs/jobrole.png'">
+                </app-ax-inputs>
+            </div>
+            <div class="contactus__right__horizontalvals">
+                <app-ax-inputs [type]="'text'" [formControlName]="'phnumber'" [id]="'phnumber'"
+                    [divId]="'contactus__right__phnumber'" [placeHolder]="'Code | Phone Number'"
+                    [formData]="contactForm" [inputClass]="'formInput__input'" [divClass]="'formInput'"
+                    [iconUrl]="'../../../../assets/images/contactUs/phone.png'">
+                </app-ax-inputs>
+                <app-ax-inputs [type]="'text'" [formControlName]="'country'" [id]="'country'"
+                    [placeHolder]="'Select Country'" [formData]="contactForm" [inputClass]="'formInput__input'"
+                    [divClass]="'formInput'" [iconUrl]="'../../../../assets/images/contactUs/country.png'">
+                </app-ax-inputs>
+            </div>
+
+            <app-ax-inputs [type]="'text'" [formControlName]="'message'" [id]="'message'"
+                [placeHolder]="'Your message for Us'" [formData]="contactForm" [inputClass]="'textarea__input'"
+                [divClass]="'textarea'" [iconUrl]="'../../../../assets/images/contactUs/msg.png'">
+            </app-ax-inputs>
+            <p class="contactus__right__p">What are you looking for?</p>
+            <div class="contactus__right__lookingtags">
+                <div class="{{classname}}" (click)="styleChange()">
+                    Events
+                </div>
+                <div class="{{classname1}}" (click)="styleChange1()">
+                    Services
+                </div>
+                <div class="{{classname2}}" (click)="styleChange2()">
+                    Careers
+                </div>
+                <div class="{{classname3}}" (click)="styleChange3()">
+                    Partner info
+                </div>
+                <div class="{{classname4}}" (click)="styleChange4()">
+                    Blogs and other content
+                </div>
+            </div>
+            <p class="contactus__right__p">What you think we should know about you or your project:</p>
+            <app-ax-inputs [type]="'text'" [formControlName]="'project'" [id]="'project'"
+                [placeHolder]="'You text here'" [formData]="contactForm" [inputClass]="'textarea__input'"
+                [divClass]="'textarea'">
+            </app-ax-inputs>
+            <div class="contactus__right__select">
+                <p class="contactus__right__p">Upload more info as a MS.Word or PDF file:</p>
+                <input type="file" id="file" class="contactus__right__select__inp" formControlName="file">
+                <label for="file" class="contactus__right__select__btn">Select Files</label>
+            </div>
+            <app-ax-schedule-call [value]="'Submit'" [imgUrl]="'../../../../assets/images/contactUs/button.png'"
+                [class]="'navbar__right__call navbar__right--call'" [btnClass]="'navbar__right__button'"
+                [divclass]="'navbar__right__img navbar__right--img'">
+            </app-ax-schedule-call>
+        </form>
+    </div>
+</div>

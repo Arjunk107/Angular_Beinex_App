@@ -1,0 +1,123 @@
+@import'../../../../assets/colors/color';
+@import'../../../../assets/fonts/font';
+@import'../../../../assets/mixins/mixin';
+
+.places {
+    height: 400px;
+    background-color: $places-col;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+    &__content {
+        height: 260px;
+        width: 90%;
+        font-family: $font;
+        display: flex;
+        gap: 2rem;
+    }
+
+
+}
+
+// .subscribersect {
+//     width: 90%;
+//     height: 113px;
+//     background-color: $subscriber-col;
+//     position: absolute;
+//     top: 21.8rem;
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     font-family: $font;
+
+//     &__content {
+//         display: flex;
+
+//         &__data {
+//             display: flex;
+//             flex-direction: column;
+//             color: $white;
+//         }
+
+//         &__h4 {
+//             font-weight: 600;
+//             font-size: 18px;
+//             line-height: 27px;
+//         }
+
+//         &__h3 {
+//             font-weight: 400;
+//             font-size: 14px;
+//             line-height: 21px;
+//         }
+//     }
+
+//     &__emailaddress {
+//         width: 32%;
+//         height: 48px;
+//         display: flex;
+
+//         &__email {
+//             width: 90%;
+//             border: none;
+//         }
+//     }
+
+//     &__btn {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         width: 44px;
+//         background-color: $dark-blue;
+
+//         &__img {
+//             width: 18.47px;
+//             height: 13px;
+//         }
+//     }
+// }
+
+@include tablet {
+    .places {
+        height: 59.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .places__content {
+        height: 30%;
+        width: 90%;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 37rem;
+    }
+
+    .subscribersect {
+        width: 96%;
+        top: 55.4rem;
+        margin-left: 15px;
+    }
+
+    .subscribersect__content {
+        width: 50%;
+    }
+}
+
+@include mobile {
+    .places {
+        height: 58rem;
+        align-items: center;
+    }
+
+
+    .places__content {
+        width: 100%;
+        gap: 0rem;
+    }
+
+
+}

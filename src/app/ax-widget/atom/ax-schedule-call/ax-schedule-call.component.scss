@@ -1,0 +1,81 @@
+@import '../../../../assets/fonts/font';
+@import'../../../../assets/colors/color';
+@import'../../../../assets/mixins/mixin';
+
+.navbar__right {
+    display: flex;
+    font-family: $font;
+    align-items: center;
+    font-size: 30px;
+    padding: 5px;
+
+    &__call {
+        border: none;
+        // width: 150px;
+        padding: 10px;
+        background-color: $dark-blue;
+        display: flex;
+        color: $white;
+        align-items: center;
+        font-family: $font;
+        justify-content: space-evenly;
+        height: 29px;
+    }
+
+    &--call {
+        font-size: 16px;
+        flex-direction: row-reverse;
+        width: 132px;
+        height: 42px;
+    }
+
+    &__contact {
+        border: none;
+        padding: 0px 12px;
+        background-color: $dot-color;
+        display: flex;
+        flex-direction: row-reverse;
+        color: $white;
+        align-items: center;
+        font-family: $font;
+        justify-content: space-evenly;
+        height: 30px;
+    }
+
+    &__button {
+        font-family: $font;
+        align-items: center;
+        font-size: 13px;
+        color: $white;
+        background-color: $dark-blue;
+        border: none;
+    }
+
+    &--button {
+        background-color: $dot-color;
+    }
+
+    &__img {
+        width: 17px;
+        height: 11.5px;
+        color: $white;
+        margin-right: 5px;
+    }
+
+    &--img {
+        width: 20px;
+        height: 19.5px;
+    }
+}
+
+@include tablet {
+    .navbar__right__button {
+        font-size: 15px;
+    }
+}
+
+@include mobile {
+    .navbar__right__button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../../../assets/fonts/font';
+@import'../../../../assets/colors/color';
+@import'../../../../assets/mixins/mixin';
+
+.trail {
+    display: flex;
+    margin-right: 22px;
+
+    &__ul {
+        display: flex;
+        font-family: $font;
+        margin-top: 18px;
+    }
+
+    &__li {
+        margin: 0px 10px;
+        color: $dot-color;
+    }
+
+    &__span {
+        color: $small-text !important;
+
+    }
+}
+
+@include tablet {
+    .trail__li {
+        margin: 0px 0px;
+    }
+}
+
+@include mobile {
+    .trail__span {
+        font-size: 10px;
+    }
+
+    .trail__ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trail__li[_ngcontent-ng-c1426459302] {
+        margin: 0px 0px;
+        width: 92px;
+    }
+}

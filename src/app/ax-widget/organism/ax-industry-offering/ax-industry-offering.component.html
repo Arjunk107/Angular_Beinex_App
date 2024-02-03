@@ -1,0 +1,71 @@
+<div class="industry">
+    <div class="industry__heading">
+        <h2>beinex industry offerings</h2>
+    </div>
+    <div class="industry__content">
+        <div class="industry__content__industrybox">
+            <div class="industry__content__head">
+                <h3 class="industry__content__h3">Industry</h3>
+                <div class="industry__content__headline"></div>
+            </div>
+
+            <div class="industry__content__data">
+                <app-ax-industry-points
+                    [iconUrl]="'../../../../assets/images/industry offerings/informationtechnology.png'"
+                    [data]="'information technology'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [iconUrl]="'../../../../assets/images/industry offerings/humanresourse.png'"
+                    [data]="'human resource'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [iconUrl]="'../../../../assets/images/industry offerings/procurement.png'"
+                    [data]="'procurement'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [iconUrl]="'../../../../assets/images/industry offerings/finance.png'"
+                    [data]="'finance'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [iconUrl]="'../../../../assets/images/industry offerings/banking.png'"
+                    [data]="'banking'">
+                </app-ax-industry-points>
+            </div>
+            <div class="industry__content__doticon">
+                <img src="../../../../assets/images/industry offerings/doticons.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="industry__content__industrybox industry__content--industrybox">
+            <div class="industry__content__head">
+                <h3 class="industry__content__h3">Offerings</h3>
+                <div class="industry__content__headline"></div>
+            </div>
+            <div class="industry__content__data">
+
+                <app-ax-industry-points [data]="'ticket response'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [data]="'sentiment analysis'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [data]="'project capabalities'">
+                </app-ax-industry-points>
+                <app-ax-industry-points [data]="'error reduction'">
+                </app-ax-industry-points>
+            </div>
+        </div>
+        <div class="industry__content__industrybox">
+            <div class="industry__content__head">
+                <h3 class="industry__content__h3">Description</h3>
+                <div class="industry__content__headline"></div>
+            </div>
+            <p class="industry__content__p">Predictive analytics is often applied here and for prediction of
+                future
+                possible relevant matters
+                for
+                tickets. Data science optimises these processes helping the companies to improve customer
+                satisfaction
+                rates and avoid previous mistakes. </p>
+        </div>
+    </div>
+    <div class="industry__button">
+        <app-ax-schedule-call [value]="'Contact Us'" [imgUrl]="'../../../../assets/images/contactUs/button.png'"
+            [class]="'navbar__right__contact'" [btnClass]="'navbar__right__button navbar__right--button'"
+            [divclass]="'navbar__right__img navbar__right--img'">
+        </app-ax-schedule-call>
+    </div>
+</div>

@@ -1,0 +1,165 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import '../../../assets/fonts/font';
+@import'../../../assets/colors/color';
+@import'../../../assets/mixins/mixin';
+
+.container-fluid {
+    padding: 0px 30px;
+}
+
+.navbar {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    flex-direction: column;
+
+    &__eclipse {
+        margin: 0rem 1.5rem;
+    }
+
+    &__top {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        &__eclipse {
+            width: 6px;
+            height: 6px;
+            margin-left: 15px;
+            display: flex;
+        }
+    }
+
+    &__dotbuttons {
+        display: none;
+    }
+
+    &__right {
+        display: flex;
+        font-family: $font;
+        align-items: center;
+        padding: 5px;
+
+    }
+
+    &__trial {
+        margin-top: 17px;
+    }
+
+    &__bottom {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid rgb(245, 245, 245);
+        border-bottom: 2px solid rgb(245, 245, 245);
+        align-items: center;
+        padding: 17px 0px;
+    }
+
+    &__contents {
+        display: flex;
+    }
+
+    &__hamberger {
+        font-size: 35px;
+        display: none;
+    }
+
+    &__navs {
+        display: flex;
+        height: 45px;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 0px;
+        margin-bottom: 4px;
+
+        &__li {
+            padding: 0px 10px;
+        }
+
+        &__a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: $dark-blue;
+            font-family: $font;
+        }
+    }
+}
+
+@include tablet {
+    .trail__span {
+        font-size: 13px;
+    }
+
+    .navbar__right__call {
+        width: 220px;
+    }
+
+    .Readmoretrail {
+        margin-top: 3px;
+    }
+
+    .navbar__hamberger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .navbar__navs {
+        display: none;
+    }
+}
+
+@include mobile {
+    .navbar {
+        height: 78px;
+        margin-bottom: 14px;
+    }
+
+    .navbar__left {
+        height: 108px;
+    }
+
+    .navbar__trial {
+        display: none;
+    }
+
+    .navbar__right__call {
+        width: 160px;
+    }
+
+    .navbar__left {
+        width: 26%;
+        height: 30px;
+    }
+
+    .navbar__eclipse {
+        margin: 0rem 0.5rem;
+    }
+
+
+    .navbar__top {
+        height: 31px;
+    }
+
+    .navbar__right {
+        display: none;
+    }
+
+    .navbar__dotbuttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar__dotbuttons__p {
+        font-size: 32px;
+    }
+}

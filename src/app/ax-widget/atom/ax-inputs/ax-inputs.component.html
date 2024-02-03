@@ -1,0 +1,10 @@
+<div [class]="divClass">
+    <div [formGroup]="formData" [class]="divId">
+        <input [type]="type" [class]="inputClass" [formControlName]="formControlName" [id]="id"
+            [placeholder]="placeHolder"
+            [ngClass]="{'invalid': formData.get(formControlName)?.touched && formData.get(formControlName)?.invalid}">
+    </div>
+    <div class=" formInput__icon">
+        <img [src]="iconUrl" alt="" srcset="">
+    </div>
+</div>
